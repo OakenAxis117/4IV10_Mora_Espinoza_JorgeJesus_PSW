@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../Imagenes/fondo.jpg);
+    color: aqua;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    font-size: 10px;
+}
+
+.useracount{
+    background-color: rgb(14, 14, 220);
+    height: 500px;
+    width: 400px;
+    border-radius: 15px solid rgb(112, 9, 167);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align-last: center;
+}
+
+.title{
+    text-align: center;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 10px;
+    color: blueviolet;
+}
+
+.username{
+    padding: 10px;
+}
+
+.username h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.username input{
+    height: 25px;
+    width: 300px;
+    border: solid 2px rgb(138, 5, 255);
+    border-radius: 10px;
+}
+
+.userappat{
+    padding: 10px;
+}
+
+.userappat h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.userappat input{
+    height: 25px;
+    width: 300px;
+    border: solid 2px rgb(138, 5, 255);
+    border-radius: 10px;
+}
+
+.userapmat{
+    padding: 10px;
+}
+
+.userapmat h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.userapmat input{
+    height: 25px;
+    width: 300px;
+    border: solid 2px rgb(138, 5, 255);
+    border-radius: 10px;
+}
+
+.userpassword{
+    padding: 10px;
+}
+
+.userpassword h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.userpassword input{
+    height: 25px;
+    width: 300px;
+    border: solid 2px rgb(138, 5, 255);
+    border-radius: 10px;
+}
+
+.confirmpass{
+    padding: 10px;
+}
+
+.confirmpass h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.confirmpass input{
+    height: 25px;
+    width: 300px;
+    border: solid 2px rgb(138, 5, 255);
+    border-radius: 10px;
+}
