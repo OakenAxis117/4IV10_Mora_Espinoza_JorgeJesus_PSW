@@ -110,7 +110,7 @@ alert("Email " + (prueba.test(email) ? "" : " no " ) + "valido")
 return prueba.test;
 
 function verificarfecha(){
-    var fecha = new Date();
+    let fecha = new Date();
 
     var fechaform = formulario.miento.value;
 
