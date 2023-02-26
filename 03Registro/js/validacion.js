@@ -102,9 +102,27 @@ function validar(formulario){
 var email = formulario.correo.value;
 
 
-var prueba =  / ([Aa-Zz] + [0 - 9] + \.){10}\@/
-([Aa-Zz] + [0 - 9]),{8}\.([Aa-Zz] + [0 - 9] + \.){3};
+var prueba =   /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
 
 alert("Email " + (prueba.test(email) ? "" : " no " ) + "valido")
 
 return prueba.test;
+
+function verificarfecha(){
+    var fecha = new Date();
+
+    var fechaform = formulario.miento.value;
+
+    todoesvalido = true
+
+    if (fecha<fechaform){
+        todoesvalido=false
+    }    
+
+    if(!todoesvalido){
+        alert("La fecha no es valida")
+        formulario.miento.focus;
+        return false;
+    }
+}
