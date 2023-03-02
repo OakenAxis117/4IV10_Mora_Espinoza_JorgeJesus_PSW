@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/styleSeis-Diez.css">
+    <title>Seis-Diez</title>
+  </head>
+
+  <body>
+    <div class="sixth">
+      <h3>Problema numero 6</h3>
+      <br />
+      <div class="sixth-answer">
+        <form name="input"  method = "get" onsubmit="return sixth(this)">
+          <label >Coloque su fecha de nacimiento</label>
+          <br>
+          <input type="date" name="nacimiento" id="fecha" max="2023-12-31">
+          <br>
+          <br>
+          <input type="submit" value="Calcular">
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="seventh">
+      <h3>Problema numero 7</h3>
+          
+      <br />
+      <div class="seventh-answer">
+        <form name="input"  method = "get" >
+          <label >Coloque el primer N°</label>
+          <br>
+          <input type="text"  id="numeroUno" onkeypress="return seventhI(event)">
+          <br>
+          <label >Coloque el segundo N°</label>
+          <br>
+          <input type="text" id="numeroDos" onkeypress="return seventhI(event)">
+          <br>
+          <br>
+          <input type="button" value="Generar Operacion" onclick="return seventh()">
+          <input type="button" value="Borrar Datos" onclick="return seventhV()">
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="eighth">
+      <h3>Problema numero 8</h3>
+
+      <br />
+      <div class="eighth-answer">
+      <form  name="numeros"method="get" onsubmit="return eighth(this)">
+        <label >Coloque el primer numero</label>
+        <br>
+        <input type="text" name="numero uno" id="numberOne">
+        <br>
+        <label >Coloque el segundo numero</label>
+        <br>
+        <input type="text" id="numberTwo" name="numero dos">
+        <br>
+        <label >Coloque el tercer numero</label>
+        <br>
+        <input type="text" id="numberThree" name="numero tres">
+        <br>
+        <br>
+        <input type="submit"value="Buscar el mas grande">
+      </form>
+      </div>
+    </div>
+    <br />
+    <div class="ninth">
+      <h3>Problema numero 9</h3>
+
+      <br />
+      <div class="ninth-answer">
+        <form name="input" onsubmit="return ninth(this)">
+        <label >Coloque la cantidad de dinero que gana cada hora</label>
+        <br>
+        <input type="text" name="salario" id="payment">
+        <br>
+        <label >Ingresa las horas que trabajaste</label>
+        <br>
+        <input type="text" name="horas" id="hours">
+        <br>
+        <br>
+        <input type="submit" value="Calcular pago">
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="tenth">
+      <h3>Problema numero 10</h3>
+
+        <table>
+          <tr>
+            <th>Tiempo</th>
+            <th>Utilidad</th>
+          </tr>
+          <tr>
+            <td>Menos de 1 año</td>
+            <td>5% del salario</td>
+          </tr>
+          <tr>
+            <td>1 año o más y menos de 2 años</td>
+            <td>7% del salario</td>
+          </tr>
+          <tr>
+            <td>2 años o más y menos de 5 años</td>
+            <td>10% del salario</td>
+            <tr>
+              <td>5 años o más y menos de 10 años</td>
+              <td>15% del salario</td>
+            </tr>
+            <tr>
+              <td>10 años o más</td>
+              <td>20% del salario</td>
+        </table>
+      </p>
+      <br />
+      <div class="tenth-answer">
+        <form  method="get" onkeypress="return tenthI(event)">
+        <label >Coloque su salario actual</label>
+        <br>
+        <input type="text" name="salario" id="lastment">
+        <br>
+        <label >Ingrese la cantidad de años que lleva en su trbajo</label>
+        <br>
+        <input type="text" name="años" id="years">
+        <br>
+        <br>
+        <input type="button" value="Calcular Utilidad actual" onclick="return tenth()">
+        <input type="button" value="Borrar datos" onclick="return tenthV()">
+        </form>
+        <br>
+      </div>
+    </div>
+    <div class="back-container">
+
+      <br />
+      <a href="../Ejercicios/mainEjercicios.html">Regresar</a>
+    </div>
+    <script src="./JS/funcion6-10.js"></script>
+  </body>
+</html>

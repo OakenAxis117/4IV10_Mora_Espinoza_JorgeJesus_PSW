@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/styleUno-Cinco.css">    
+    <title>Uno-Cinco</title>
+  </head>
+
+  <body>
+    <div class="first">
+      <h3>Problema numero 1</h3>
+
+      <br />
+      <div class="first-answer" >
+        <form name="input" method = "get" >
+        <label >Capital que va a invertir en pesos mexicanos</label>
+        <br>
+        <input type="text" id="inversion" onkeypress="return inputNumeros(event)">
+        <br>
+        <label >Cuanto tiempo va a invertir no mas alla de 3 años (Colocar en meses)</label>
+        <br>
+        <input type="text" id="meses"  onkeypress="return inputNumeros(event)">  
+        <br>
+        <input type="button" value="Calcular inversion" onclick="return funcionUno()">
+        <input type="button" value="Borrar datos" onclick="return vaciar()">
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="second">
+      <h3>Problema numero 2</h3>
+
+      <br />
+      <div class="second-answer">
+        <form name="input" method = "get" >
+        <label >Sueldo base mas un 10% extra por comisión de sus ventas las cuales son 5 que realiza durante un mes asi mismo se le hace un descuento del 12% por concepto de impuesto para lo cual desea saber el total que recibira como cobro.</label>
+        <br>
+        <input type="text" id="pagoV" onkeypress="return inputNumeros(event)">
+        <br>
+        <br>
+        <input type="button" value="Calcular salario" onclick="return secondF()">
+        <input type="button" value="Borrar datos" onclick="return secondV()">
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="third">
+      <h3>Problema numero 3</h3>
+      <p>
+       Los descuentos van desde:
+       <br>
+      Papas 2% 
+       <br>
+       Pastelito 10%
+       <br>
+       Lacteo 7.5%
+       <br>
+      </p>
+      <br />
+      <div class="third-answer">
+        <form method="get" name="Store">
+          <label >Coloca como se llama el producto</label>
+          <br>
+          <input type="text" id='producto' onkeypress="return inputLetras()">
+          <br>
+          <label >Coloca la marca del producto</label>
+          <br>
+          <input type="text" id='marca' onkeypress="return inputLetras()">
+          <br>
+          <label >Coloca que producto es</label>
+          <br>
+          <input type="text" id='tipoProducto' onkeypress="return inputLetras()">
+          <br>
+          <label >Coloca cuando cuesta el prodcuto</label>
+          <br>
+          <input type="text" id='precioProducto' onkeypress="return inputNumeros(event)">
+          <br>
+          <br>
+          <input type="button" value="Calcular precio" onclick="return thirdF()">
+          <input type="button" value="Borrar datos" onclick="return thirdV()">
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="fourth">
+      <h3>Problema numero 4</h3>
+
+        <ul>
+        <li>55% del promedio de sus tres calificaciones parciales.</li>
+        <li>30% de la calificación del examen final. </li>
+        <li>15% de la calificación de un trabajo final</li>
+    </ul>
+      </p>
+      <br />
+      <div class="fourth-answer">
+        <form  method="get" name="calificacion">
+          <label >Coloca la calificacion de tu 1er parcial</label>
+          <br>
+          <input type="text" id='parcial1' onkeypress="return inputNumeros(event)">
+          <br>
+          <label >Coloca la calificacion de tu 2do parcial</label>
+          <br>
+          <input type="text" id='parcial2' onkeypress="return inputNumeros(event)">
+          <br>
+          <label >Coloca la calificacion de tu ultimo parcial</label>
+          <br>
+          <input type="text" id='parcial3' onkeypress="return inputNumeros(event)">
+          <br>
+          <label >Coloque la calificacion del examen final</label>
+          <br>
+          <input type="text" id='examenFinal' onkeypress="return inputNumeros(event)">
+          <br>
+          <label >Coloque la calificacion del trabajo final</label>
+          <br>
+          <input type="text" id='trabajoFinal' onkeypress="return inputNumeros(event)">
+          <br>
+          <br>
+          <input type="button" value="Calcular promedio" onclick="return fourthF()">
+          <input type="button" value="Borrar datos" onclick="return fourthV()">
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="fifth">
+      <h3>Problema numero 5</h3>
+
+      <br />
+      <div class="fifth-answer">
+        <form method="get" name="porcentajes">
+          <label >Coloque la cantidad de varones</label>
+          <br>
+          <input type="text" id='hombres' onkeypress="return inputNumeros(event)">
+          <br>
+          <label >Coloque la cantidad de mujeres</label>
+          <br>
+          <input type="text" id='mujeres' onkeypress="return inputNumeros(event)">
+          <br>
+          <br>
+          <input type="button" value="Calcular porcentajes" onclick="return fifthF()">
+          <input type="button" value="Borrar datos" onclick="return fifthV()">
+        </form>
+      </div>
+    </div>
+    <div class="back-container">
+
+      <br>
+      <a href="../Ejercicios/mainEjercicios.html">Regresar</a>
+    </div>
+    <script src="./JS/funcion1-5.js"></script>
+  </body>
+</html>
