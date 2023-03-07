@@ -4,7 +4,15 @@
 
 //problema 2
 function problema2(){
-    var p2_input = document.querySelector('#p2-input').value;
+    var x = document.getElementById['p2-x1','p2-x2','p2-x3','p2-x4','p2-x5'];
+    var y = document.getElementById['p2-y1','p2-y2','p2-y3','p2-y4','p2-y5'];
+    var result = [];
+
+    for(i = 0; i < 5; i++){
+        result = x[i] * y[i];
+    }
+
+    document.getElementById('p2-output').innerHTML = result[i];
 }
 
 
