@@ -3,7 +3,9 @@
 
 
 //problema 2
-
+function problema2(){
+    var p2_input = document.querySelector('#p2-input').value;
+}
 
 
 //problema3
@@ -12,7 +14,7 @@ function problema3(){
     //primero se define un alfabeto
     var alfabeto = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "Ñ", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     //vamos a obeter la entrada de datos
-    var p3_input = document.querySelector('#p3-input').ariaValueMax;
+    var p3_input = document.querySelector('#p3-input').value;
 
     //lo que necesitamos es separar todo por comas
     var p3_palabras = p3_input.split(',');
@@ -31,7 +33,7 @@ function problema3(){
         var palabra_array = palabra.split('');
 
         //debo iterar el alfabeto
-        alfabeto.forEach(function(letra, j)){
+        alfabeto.forEach{function(letra, j)} {
             //itero cada palabra
             palabra.forEach(function(letras, palabras, k){
                 //comprobar que la letra este dentro del alfabeto

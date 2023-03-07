@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style-base.css">
+    <link rel="stylesheet" href="./CSS/style-form.css">
+    <title>Examen | JJ</title>
+</head>
+<body>
+
+    <form id="formulario">
+        <div>
+            <input type="number" placeholder="Escribe el capital inicial" id="cap_ini">
+            <input type="number" placeholder="Escribe el tiempo" id="time_input">
+            <input type="number" placeholder="Escribe la tasa de interes" id="int_input">
+            <button id="button" onclick="return interes_final();">Calcular</button>
+        </div>
+    </form>
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th id="capini">Capital Inicial</th>
+                <th id="time">Tiempo</th>
+                <th id="interes">Interés</th>
+                <th id="cap_final">Capital Final</th>
+                <th id="cuota">Cuota</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="./JS/validacion.js"></script>
+</body>
+</html>
